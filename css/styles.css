@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Rubik";
+  font-size: 18px;
+  color: #f5f5f5;
+  --main-tw-color-: #fff;
+}
+
+button {
+  cursor: pointer;
+  background: transparent;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 475px;
+  padding: 0 15px;
+  margin: 0 auto;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+body {
+  background: #171717;
+}
+
+.main {
+  min-height: 100vh;
+}
+.main .container {
+  min-height: 100vh;
+}
+.main .content {
+  padding: 50px 0;
+}
+.main .content .buttons-panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.main .content .buttons-panel .logo-block .logo {
+  font-size: 48px;
+  padding: 15px;
+}
+.main .content .buttons-panel .info-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.main .content .buttons-panel .info-block > *:not(:last-child) {
+  margin-bottom: 20px;
+}
+.main .content .buttons-panel .info-block .score-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.main .content .buttons-panel .info-block .score-block .score {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 100px;
+  padding: 15px 0 20px;
+  border-radius: 5px;
+  background: #212121;
+  color: #f5f5f5;
+}
+.main .content .buttons-panel .info-block .score-block .score:not(:last-child) {
+  margin-right: 20px;
+}
+.main .content .buttons-panel .info-block .score-block .score .name {
+  margin-bottom: 20px;
+  font-family: "Comfortaa";
+}
+.main .content .buttons-panel .info-block .score-block .score .value {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Comfortaa";
+}
+.main .content .buttons-panel .info-block .new-game {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px 16px;
+  background: #212121;
+  border-radius: 5px;
+  font-family: "Comfortaa";
+  font-weight: 700;
+}
+.main .content .play-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 15px 7.5px 0 7.5px;
+  background: #212121;
+  border-radius: 5px;
+}
+.main .content .play-field .tile-wrapper {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 115px;
+  padding: 0 7.5px;
+}
+.main .content .play-field .tile-wrapper .tile {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  background: rgba(230, 230, 230, 0.05);
+}
+.main .content .play-field .tile-wrapper .tile .tile-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-size: 26px;
+  border-radius: 5px;
+}
