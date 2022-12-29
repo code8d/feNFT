@@ -1,0 +1,349 @@
+.header {
+    .container {
+    }
+    .header-block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 162px;
+    }
+}
+.block {
+    display: flex;
+    align-items: center;
+    & > *:not(:last-child) {
+        margin-right: 100px;
+    }
+    .hamburger {
+        display: none;
+        flex-direction: column;
+        & > *:not(:last-child) {
+            margin-bottom: 6px;
+        }
+        .line {
+            display: block;
+            width: 35px;
+            height: 3px;
+            background: linear-gradient(118.73deg, #CAB0B3 0.05%, #C3181F 38.91%, #0B0E17 99.88%, #09101D 100%);
+            border-radius: 1px;
+        }
+    }
+}
+.logo-block {
+    .logo {
+        display: flex;
+        .fe, .nft {
+            font-family: $zen;
+            font-size: 32px;
+        }
+        .fe {
+        }
+        .nft {
+            background-color: #CAB0B3;
+            background: linear-gradient(118.73deg, #CAB0B3 0.05%, #C3181F 38.91%, #0B0E17 99.88%, #09101D 100%);
+            background-image: linear-gradient(118.73deg, #CAB0B3 0.05%, #C3181F 38.91%, #0B0E17 99.88%, #09101D 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}
+.nav-block {
+}
+.nav__list {
+    display: flex;
+    align-items: center;
+    & > *:not(:last-child) {
+        margin-right: 72px;
+    }
+    .nav__li {
+        .nav__link {
+            font-size: 18px;
+        }
+    }
+}
+.button-block {
+    .signup {
+        width: 154px;
+        height: 62px;
+        font-weight: 500;
+        font-size: 18px;
+        border-radius: 10px;
+        background: linear-gradient(118.73deg, #CAB0B3 0.05%, #C3181F 38.91%, #0B0E17 99.88%, #09101D 100%);
+    }
+}
+
+@media (max-width: 1200px) {
+    .header {
+        .container {
+        }
+        .header-block {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 122px;
+        }
+    }
+    .block {
+        display: flex;
+        align-items: center;
+        & > *:not(:last-child) {
+            margin-right: 100px;
+        }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            & > *:not(:last-child) {
+                margin-bottom: 6px;
+            }
+            .line {
+                display: block;
+                width: 35px;
+                height: 3px;
+            }
+        }
+    }
+    .logo-block {
+        .logo {
+            display: flex;
+            .fe, .nft {
+                font-family: $zen;
+                font-size: 32px;
+            }
+            .fe {
+            }
+            .nft {
+            }
+        }
+    }
+    .nav-block {
+    }
+    .nav__list {
+        display: flex;
+        align-items: center;
+        & > *:not(:last-child) {
+            margin-right: 72px;
+        }
+        .nav__li {
+            .nav__link {
+                font-size: 18px;
+            }
+        }
+    }
+    .button-block {
+        .signup {
+            width: 154px;
+            height: 62px;
+            font-weight: 500;
+            font-size: 18px;
+            border-radius: 10px;
+            background: linear-gradient(118.73deg, #CAB0B3 0.05%, #C3181F 38.91%, #0B0E17 99.88%, #09101D 100%);
+        }
+    }
+}
+@media (min-width: 1024px) {
+    .header {
+        .container {
+        }
+        .header-block {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 122px;
+        }
+    }
+    .block {
+        display: flex;
+        align-items: center;
+        & > *:not(:last-child) {
+            margin-right: 100px;
+        }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            & > *:not(:last-child) {
+                margin-bottom: 6px;
+            }
+            .line {
+                display: block;
+                width: 35px;
+                height: 3px;
+            }
+        }
+    }
+    .logo-block {
+        .logo {
+            display: flex;
+            .fe, .nft {
+                font-family: $zen;
+                font-size: 32px;
+            }
+            .fe {
+            }
+            .nft {
+            }
+        }
+    }
+    .nav-block {
+    }
+    .nav__list {
+        display: flex;
+        align-items: center;
+        & > *:not(:last-child) {
+            margin-right: 72px;
+        }
+        .nav__li {
+            .nav__link {
+                font-size: 18px;
+            }
+        }
+    }
+    .button-block {
+        .signup {
+            width: 154px;
+            height: 62px;
+            font-weight: 500;
+            font-size: 18px;
+            border-radius: 10px;
+            background: linear-gradient(118.73deg, #CAB0B3 0.05%, #C3181F 38.91%, #0B0E17 99.88%, #09101D 100%);
+        }
+    }
+}
+@media (max-width: 1023px) {
+    .header {
+        .container {
+        }
+        .header-block {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 122px;
+        }
+    }
+    .block {
+        display: flex;
+        align-items: center;
+        & > *:not(:last-child) {
+            margin-right: 50px;
+        }
+        .hamburger {
+            display: flex;
+            flex-direction: column;
+            & > *:not(:last-child) {
+                margin-bottom: 6px;
+            }
+            .line {
+                display: block;
+                width: 35px;
+                height: 3px;
+            }
+        }
+    }
+    .logo-block {
+        .logo {
+            display: flex;
+            .fe, .nft {
+                font-family: $zen;
+                font-size: 32px;
+            }
+            .fe {
+            }
+            .nft {
+            }
+        }
+    }
+    .nav-block {
+        display: none;
+    }
+    .nav__list {
+        display: flex;
+        align-items: center;
+        & > *:not(:last-child) {
+            margin-right: 72px;
+        }
+        .nav__li {
+            .nav__link {
+                font-size: 18px;
+            }
+        }
+    }
+    .button-block {
+        .signup {
+            width: 154px;
+            height: 62px;
+            font-weight: 500;
+            font-size: 18px;
+            border-radius: 10px;
+            background: linear-gradient(118.73deg, #CAB0B3 0.05%, #C3181F 38.91%, #0B0E17 99.88%, #09101D 100%);
+        }
+    }
+}
+@media (max-width: 767px) {
+    .header {
+        .container {
+        }
+        .header-block {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 82px;
+        }
+    }
+    .block {
+        display: flex;
+        align-items: center;
+        & > *:not(:last-child) {
+            margin-right: 0px;
+        }
+        .hamburger {
+            display: flex;
+            flex-direction: column;
+            & > *:not(:last-child) {
+                margin-bottom: 6px;
+            }
+            .line {
+                display: block;
+                width: 35px;
+                height: 3px;
+            }
+        }
+    }
+    .logo-block {
+        .logo {
+            display: flex;
+            .fe, .nft {
+                font-family: $zen;
+                font-size: 24px;
+            }
+            .fe {
+            }
+            .nft {
+            }
+        }
+    }
+    .nav-block {
+        display: none;
+    }
+    .nav__list {
+        display: flex;
+        align-items: center;
+        & > *:not(:last-child) {
+            margin-right: 72px;
+        }
+        .nav__li {
+            .nav__link {
+                font-size: 18px;
+            }
+        }
+    }
+    .button-block {
+        display: none;
+        .signup {
+            width: 154px;
+            height: 62px;
+            font-weight: 500;
+            font-size: 18px;
+            border-radius: 10px;
+            background: linear-gradient(118.73deg, #CAB0B3 0.05%, #C3181F 38.91%, #0B0E17 99.88%, #09101D 100%);
+        }
+    }
+}
