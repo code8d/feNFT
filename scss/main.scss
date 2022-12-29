@@ -3,8 +3,120 @@ body {
 }
 
 .main {
+    position: relative;
     flex: 1 1 100%;
-    .container {
-        min-height: 100vh;
+    padding: 162px 0 0 0;
+}
+
+// Hero
+.hero {
+    display: flex;
+    min-height: calc(1024px - 162px);
+    .content {
+        width: 100%;
+    }
+}
+.container {
+    .content-block {
+        max-width: 631px;
+    }
+}
+.title-block {
+    padding-top: 111px;
+    margin-bottom: 77px;
+    & > *:not(:last-child) {
+        margin-bottom: 16px;
+    }
+    .title {
+        font-family: $zen;
+        font-size: 74px;
+        line-height: 108px;
+    }
+    .subtitle {
+        font-size: 18px;
+        color: #BDBFD1;
+    }
+}
+.buttons-panel {
+    display: flex;
+    margin-bottom: 68px;
+    & > *:not(:last-child) {
+        margin-right: 40px;
+    }
+    .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 152px;
+        height: 62px;
+        border-radius: 10px;
+    }
+    .text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 500;
+        font-size: 18px;
+        width: 150px;
+        height: 60px;
+        transition: .3s ease;
+    }
+    .text-right {
+        background: #020B12;
+        border-radius: 10px;
+    }
+    .button-left {
+        background: linear-gradient(118.73deg, #CAB0B3 0.05%, #C3181F 38.91%, #0B0E17 99.88%, #09101D 100%);
+    }
+    .button-right {
+        background: linear-gradient(118.73deg, #CAB0B3 0.05%, #C3181F 38.91%, #0B0E17 99.88%, #09101D 100%);
+        position: relative;
+        &:hover {
+            .text {
+                background: transparent;
+            }
+        }
+    }
+}
+.facts-block {
+    display: flex;
+    & > *:not(:last-child) {
+        margin-right: 40px;
+    }
+    .item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 152px;
+        & > *:not(:last-child) {
+            margin-bottom: 6px;
+        }
+        .number {
+            font-weight: 500;
+            font-size: 24px;
+        }
+        .text {
+            font-size: 16px;
+            letter-spacing: 0.2px;
+            color: #BDBFD1;
+        }
+    }
+}
+.cover-block {
+    position: absolute;
+    top: 14px;
+    right: 0;
+    z-index: -1;
+    .image-block {
+        position: relative;
+        display: flex;
+        max-width: 740px;
+        max-height: 1010px;
+        .image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
 }
